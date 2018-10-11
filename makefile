@@ -12,3 +12,8 @@ clean :
 
 run : 
 	./a.out
+
+debug : llist.c tester.c llist.h
+	gcc -g -c llist.c
+	gcc -g -c tester.c
+	gcc -g llist.o tester.o
